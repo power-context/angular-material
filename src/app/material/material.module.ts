@@ -1,14 +1,24 @@
 import { NgModule } from '@angular/core';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-
-const MaterialComponents = [
+import { 
+  MatIconModule, 
+  MatTableModule, 
   MatButtonModule,
-  MatIconModule
+  MatInputModule,
+  MatSortModule,
+  MatPaginatorModule
+} from '@angular/material';
+
+const components = [
+  MatButtonModule,
+  MatIconModule,
+  MatTableModule,
+  MatInputModule,
+  MatSortModule,
+  MatPaginatorModule
 ]
 
 @NgModule({
-  imports: [MaterialComponents],
-  exports: [MaterialComponents]
+  imports: [components],
+  exports: [components]
 })
 export class MaterialModule { }
